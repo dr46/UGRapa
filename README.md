@@ -53,6 +53,16 @@ Este proyecto contiene un conjunto de carpetas en las que se organizan los archi
 
 - 01_import.R: este archivo importa el contenido del archivo *apa.csv* y carga el correspondiente objeto (apa) en el espacio de trabajo de R. 
 
+- 02_descriptivos.R: este archivo estima estadísticos descriptivos sobre el porcentaje de errores globales y por tipo de referencia.
+
+- 03_rl.R: este archivo explora la relación lineal que se establece entre las variables recogidas en el estudio.
+
+# Figuras
+
+em.pdf: gráfico de barras que representa el promedio de errores globales que se producen en cada parte de las referencias.
+
+gd.pdf: gráfico de dispersión para la relación que se observa entre el número de post y la diferencia de caracteres respecto a la referencia correcta.
+
 
 # Referencias
 

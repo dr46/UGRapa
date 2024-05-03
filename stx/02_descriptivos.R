@@ -20,21 +20,26 @@ barplot(sort(es, decreasing = T),
 axis(2, las = 2)
 
 
-
-
 # Porcentaje de errores (y desviaciones típicas) por tipo de documento y sección de la referencia
   # Autor
+    # Medias
   round(tapply(apa$autor, apa$td, mean)*100, 2)
+    # Desviaciones típicas
   round(tapply(apa$autor, apa$td, sd), 2)
   # Fecha
+    # Medias
   round(tapply(apa$fecha, apa$td, mean)*100, 2)
+    # Desviaciones típicas
   round(tapply(apa$fecha, apa$td, sd), 2)
   # Título
+    # Medias
   round(tapply(apa$titulo, apa$td, mean)*100, 2)
+    # Desviaciones típicas
   round(tapply(apa$titulo, apa$td, sd), 2)
   # Fuente
+    #Medias
   round(tapply(apa$fuente, apa$td, mean)*100, 2)
+    # Desviaciones típicas
   round(tapply(apa$fuente, apa$td, sd), 2)
 
-
-
+rm(es)

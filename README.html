@@ -9,6 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="Ana María Ruiz-Ruano (1) García &amp; Jorge López Puga (2)" />
 
 
 <title>UGRapa: dinámicas de mejora en el uso de referencias bibliográficas en la universidad</title>
@@ -164,13 +165,17 @@ pre code {
 
 
 <h1 class="title toc-ignore">UGRapa: dinámicas de mejora en el uso de referencias bibliográficas en la universidad</h1>
+<h4 class="author">Ana María Ruiz-Ruano (1) García &amp; Jorge López Puga (2)</h4>
 
 </div>
 
 
+<p>1 <a href="https://orcid.org/0000-0002-7260-0588" class="uri">https://orcid.org/0000-0002-7260-0588</a><br />
+2 <a href="https://orcid.org/0000-0003-0693-0092" class="uri">https://orcid.org/0000-0003-0693-0092</a></p>
 <div id="introducción" class="section level1">
 <h1>Introducción</h1>
-<p>Tal</p>
+<p>Este proyecto contiene los archivos de datos, el código y las figuras generadas para el capítulo de libro titulado “Dinámicas de mejora en el uso de referencias bibliográficas en la universidad”. Contiene la misma información que la que está contenida en el archivo <a href="https://osf.io/zfa3h">README.pdf</a>.</p>
+<p>El resto de este documento está estructurado del siguiente modo. En primer lugar aparece una explicación de las carpetas/directorios contenidos en el proyecto. Seguidamente, aparece una sección de “Archivos” en la que se indican los archivos de datos, de código y las figuras incluidas en este proyecto. Al final aparece la sección de “Referencias”.</p>
 </div>
 <div id="carpetasdirectrios" class="section level1">
 <h1>Carpetas/directrios</h1>
@@ -186,7 +191,7 @@ pre code {
 <div id="archivos-de-datos" class="section level2">
 <h2>Archivos de datos</h2>
 <ul>
-<li><p>td.pdf: este archivo contiene una tabla en la que aparecen los enlaces que se utilizaron como punto de partida para solicitar que el alumnado generase referencias bibliográficas siguiendo el estilo de la <a href="https://doi.org/10.1037/0000165-000">American Psychological Association (2020)</a>. La primera columna de la tabla contenida en este documento (<em>td</em>) se refiere al código utilizado en el archivo <em>apa.csv</em>.</p></li>
+<li><p>td.pdf: este archivo contiene una tabla en la que aparecen los enlaces que se utilizaron como punto de partida para solicitar que el alumnado generase referencias bibliográficas siguiendo el estilo de la <a href="https://doi.org/10.1037/0000165-000">American Psychological Association (2020)</a>. La primera columna de la tabla contenida en este documento (<em>td</em>) se refiere al código utilizado en el archivo <a href="dat/apa.csv">apa.csv</a>.</p></li>
 <li><p>apa.csv: este es el archivo de datos principal del proyecto. Contiene las siguientes variables:</p>
 <ul>
 <li>caso: es el código que identifica inequívocamente cada uno de las referencias propuestas por los alumnos a los retos presentados en la tabla <em>td.pdf</em>. Esta columna sirve para combinar el archivo <em>apa.csv</em> con el archivo <em>post.pdf</em>.</li>
@@ -202,7 +207,7 @@ pre code {
 <li>sa.titulo: representa la suma acumulativa de errores para el campo título por tipo de documento (<em>td</em>).</li>
 <li>sa.fuente: representa la suma acumulativa de errores para el campo fuente por tipo de documento (<em>td</em>).</li>
 <li>sa.et: representa la suma acumulativa de errores totales por tipo de documento (<em>td</em>).</li>
-<li>dc: representa la diferencia de caracteres del post propuesto (<span class="math inline">\(C^{prop}_i\)</span>) considerando el número de caracteres de la referencia considerada como correcta (<span class="math inline">\(C^{prop}_c\)</span>). Es decir, <span class="math display">\[C^{prop}_i - C^{prop}_c\]</span> Por tanto, un valor positivo en la columna <em>dc</em> representa el número de caracteres que la propuesta <span class="math inline">\(i\)</span> sobrepasa el número de caracteres contenido en la propuesta correcta de referencia (<span class="math inline">\(C^{prop}_c\)</span>). Por su parte, un valor negativo en esta columna representa el número de caracteres de la propuesta <span class="math inline">\(i\)</span> que faltan a la referencia teniendo en cuenta la propuesta correcta de referencia (<span class="math inline">\(C^{prop}_c\)</span>).</li>
+<li>dc: representa la diferencia de caracteres del post propuesto (<span class="math inline">\(C^{prop}\_i\)</span>) considerando el número de caracteres de la referencia considerada como correcta (<span class="math inline">\(C^{prop}\_c\)</span>). Es decir, [C^{prop}_i - C^{prop}_c] Por tanto, un valor positivo en la columna <em>dc</em> representa el número de caracteres que la propuesta <span class="math inline">\(i\)</span> sobrepasa el número de caracteres contenido en la propuesta correcta de referencia (<span class="math inline">\(C^{prop}\_c\)</span>). Por su parte, un valor negativo en esta columna representa el número de caracteres de la propuesta <span class="math inline">\(i\)</span> que faltan a la referencia teniendo en cuenta la propuesta correcta de referencia (<span class="math inline">\(C^{prop}\_c\)</span>).</li>
 </ul></li>
 <li><p>post.pdf: este archivo contiene una tabla con las propuestas de referencia (<em>prop</em>) para cada uno de los tipos de documentos (<em>td</em>) propuestos y que aparecen en el archivo <em>td.pdf</em>. La columna <em>caso</em> sirve para identificar inequívocamente cada uno de los potst y para que pueda vincularse con el archivo <em>apa.csv</em>.</p></li>
 </ul>
@@ -219,8 +224,17 @@ pre code {
 </div>
 <div id="figuras" class="section level1">
 <h1>Figuras</h1>
-<p>em.pdf: gráfico de barras que representa el promedio de errores globales que se producen en cada parte de las referencias.</p>
-<p>gd.pdf: gráfico de dispersión para la relación que se observa entre el número de post y la diferencia de caracteres respecto a la referencia correcta.</p>
+<p>La carpeta <em>fig</em> de este proyecto contiene las figuras vectorizadas incluidas en el capítulo en formato PDF. El listado de archivos, junto con una breve descripción de lo que contiene cada gráfico, es este:</p>
+<ul>
+<li><p><a href="https://osf.io/2qcdu">em.pdf</a>: gráfico de barras que representa el promedio de errores globales que se producen en cada parte de las referencias.</p></li>
+<li><p><a href="https://osf.io/9nmek">gd.pdf</a>: gráfico de dispersión para la relación que se observa entre el número de post y la diferencia de caracteres respecto a la referencia correcta.</p></li>
+<li><p><a href="https://osf.io/gwpjm">gp_1.pdf</a>: contiene el gráfico de línea por pasos para los errores acumulados que se producen en las cuatro secciones de una referencia (F: fuente, A: autoría, FP: fecha de publicación, y T: título) para el reto o tipo de documento 1.</p></li>
+<li><p><a href="https://osf.io/bk9ax">gp_2.pdf</a>: contiene el gráfico de línea por pasos para los errores acumulados que se producen en las cuatro secciones de una referencia (F: fuente, A: autoría, FP: fecha de publicación, y T: título) para el reto o tipo de documento 2.</p></li>
+<li><p><a href="https://osf.io/q8amb">gp_3.pdf</a>: contiene el gráfico de línea por pasos para los errores acumulados que se producen en las cuatro secciones de una referencia (F: fuente, A: autoría, FP: fecha de publicación, y T: título) para el reto o tipo de documento 3.</p></li>
+<li><p><a href="https://osf.io/b6gec">gp_4.pdf</a>: contiene el gráfico de línea por pasos para los errores acumulados que se producen en las cuatro secciones de una referencia (F: fuente, A: autoría, FP: fecha de publicación, y T: título) para el reto o tipo de documento 4.</p></li>
+<li><p><a href="https://osf.io/n9wma">gp_6.pdf</a>: contiene el gráfico de línea por pasos para los errores acumulados que se producen en las cuatro secciones de una referencia (F: fuente, A: autoría, FP: fecha de publicación, y T: título) para el reto o tipo de documento 6.</p></li>
+<li><p><a href="https://osf.io/hp8qb">gp_t.pdf</a>: contiene el gráfico de línea por pasos para los errores totales acumulados que se producen en cada uno de los tipos de documento (del 1 al 6, excepto el 5) utilizados.</p></li>
+</ul>
 </div>
 <div id="referencias" class="section level1">
 <h1>Referencias</h1>

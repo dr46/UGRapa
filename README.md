@@ -59,9 +59,15 @@ Este proyecto contiene un conjunto de carpetas en las que se organizan los archi
 
 # Figuras
 
-em.pdf: gráfico de barras que representa el promedio de errores globales que se producen en cada parte de las referencias.
+La carpeta *fig* de este proyecto contiene las figuras vectorizadas incluidas en el capítulo en formato PDF. El listado de archivos, junto con una breve descripción de lo que contiene cada gráfico, es este:
 
-gd.pdf: gráfico de dispersión para la relación que se observa entre el número de post y la diferencia de caracteres respecto a la referencia correcta.
+- em.pdf: gráfico de barras que representa el promedio de errores globales que se producen en cada parte de las referencias.
+
+- gd.pdf: gráfico de dispersión para la relación que se observa entre el número de post y la diferencia de caracteres respecto a la referencia correcta.
+
+- gp_6:
+
+- gp_t.pdf: 
 
 
 # Referencias

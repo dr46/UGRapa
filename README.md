@@ -1,7 +1,7 @@
 'UGRapa: dinámicas de mejora en el uso de referencias bibliográficas en la universidad'
 ================
 
-Ana María Ruiz-Ruano # <https://orcid.org/0000-0002-7260-0588>
+Ana María Ruiz-Ruano # <https://orcid.org/0000-0002-7260-0588> \
 Jorge López Puga # <https://orcid.org/0000-0003-0693-0092>
 
 
